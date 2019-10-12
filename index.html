@@ -7,13 +7,10 @@
   <meta name="description" content="Installing South Florida's Artificial Grass since 2004." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="css/main.css">
-
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MNHGKP9');</script>
   <!-- End Google Tag Manager -->
@@ -25,8 +22,137 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <h1>SoFla Artificial Grass</h1>
+  <div class="container">
+    <h1 class="display-3 mt-5">
+      South Florida Artificial Grass<br/>
+      <small class="text-muted">by <a href="http://southfloridaputtinggreens.com">SFPG</a></small>
+    </h1>
 
+    <section class="contact mt-5">
+      <div class="phone"><a href="tel:954-788-4376">☎ (954) 788-4376</a></div>
+      <div class="address">1081 NORTHWEST 31ST AVENUE, POMPANO BEACH, FL 33069</div>
+    </section>
+
+    <section class="jumbotron jumbotron-fluid mt-5 d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="display-4 text-center">
+          Installing South Florida’s best Synthetic Turf surfaces since 2004
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-4">Specializing in</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Artificial Lawns (aka Synthetic Lawns)</li>
+        <li class="list-group-item">Putting Greens</li>
+        <li class="list-group-item">Pet Grass</li>
+        <li class="list-group-item">Playground Turf</li>
+      </ul>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-4">Service area</h2>
+
+      <p>We serve all of South Florida, including:</p>
+
+      <ul class="list-group">
+        <li class="list-group-item">Palm Beach (Boca Raton, West Palm...)</li>
+        <li class="list-group-item">Broward (Fort Lauderdale, Pembroke Pines, Hollywood, Miramar, Coral Springs...)</li>
+        <li class="list-group-item">Miami-Dade (Miami, Hialeah...)</li>
+        <li class="list-group-item">St Lucie</li>
+      </ul>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-4">Our lawns are perfect for</h2>
+      <ul class="list-group">
+        <li  class="list-group-item">Residential Homes</li>
+        <li  class="list-group-item">Office Complexes</li>
+        <li  class="list-group-item">Shopping Malls</li>
+        <li  class="list-group-item">Auto Dealerships</li>
+        <li  class="list-group-item">Hotels & Motels</li>
+        <li  class="list-group-item">Apartment Buildings</li>
+        <li  class="list-group-item">Golf Courses</li>
+        <li  class="list-group-item">Driving Ranges</li>
+        <li  class="list-group-item">Pro Shops</li>
+        <li  class="list-group-item">Condominiums</li>
+        <li  class="list-group-item">Retirement Communities</li>
+        <li  class="list-group-item">Game/Rec. Rooms</li>
+      </ul>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-4">★★★★★ on</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="https://www.facebook.com/South-Florida-Putting-Greens-207175969442825/" rel="noreferrer" target="_blank">Facebook</a></li>
+        <li class="list-group-item"><a href="https://www.yelp.com/biz/south-florida-putting-greens-pompano-beach" rel="noreferrer" target="_blank">Yelp</a></li>
+        <li class="list-group-item"><a href="https://goo.gl/maps/LV6T8aRnpSGLNFFb7" rel="noreferrer" target="_blank">Google</a></li>
+      </ul>
+    </section>
+
+    <section class="mt-5 display-4">
+      Our business is family run with products made right here in the USA!
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-4">Request a quote</h2>
+      <form id="contact-form" action="https://formspree.io/mvewlbdx" method="POST">
+        <div class="form-group"><label for="text-field">Name</label> <input class="form-control" id="text-field" type="text" name="name" /></div>
+        <div class="form-group"><label for="email-field">Email</label> <input class="form-control" id="email-field" type="email" name="email" /></div>
+        <div class="form-group"><label for="phone-field">Phone</label> <input class="form-control" id="phone-field" type="phone" name="phone" /></div>
+        <div class="form-group"><label for="details-field">Details</label> <textarea class="form-control" id="details-field" name="details"></textarea></div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <p id="contact-form-status"></p>
+    </section>
+
+    <footer class="mb-4"><small>© Copyright 2019 All Rights Reserved</small></footer>
+  </div>
+
+  <!-- Contact form script -->
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var form = document.getElementById("contact-form");
+      var status = document.getElementById("contact-form-status");
+
+      function success() {
+        form.reset();
+        form.style = "display: none;";
+        status.innerText = "Thanks! We'll be in contact soon.";
+      }
+
+      function error() { status.innerText = "Oops! There was a problem."; }
+
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script async src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>
