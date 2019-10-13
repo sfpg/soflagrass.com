@@ -1,7 +1,26 @@
-.jumbotron {
-  background-image: url("../img/grass.jpg");
+#app .header {
+  background-image: url("../img/banner.jpg");
   background-position: center;
   background-size: cover;
-  height: 400px;
-  color: #fff;
+  min-height: 50vh;
+}
+
+#app .font-biryani {
+  font-family: 'Biryani', sans-serif;
+}
+
+#app .text-outline {
+  text-shadow: black 0 0 2px
+}
+
+#app .letter-spaced-s {
+  letter-spacing: 2px;
+}
+
+#app .letter-spaced-m {
+  letter-spacing: 4px;
+}
+
+#app .text-gold {
+  color: #CF9B00;
 }
