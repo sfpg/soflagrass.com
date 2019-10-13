@@ -1,8 +1,10 @@
 #app .header {
-  background-image: url("../img/banner.jpg");
+  min-height: 50vh;
+}
+
+#app .bg-img {
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
 }
 
 #app .font-biryani {
@@ -23,4 +25,8 @@
 
 #app .text-gold {
   color: #CF9B00;
+}
+
+#app .bg-dark-med {
+  background-color: rgba(33,37,41,.5)!important
 }
